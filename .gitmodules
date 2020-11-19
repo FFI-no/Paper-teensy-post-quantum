@@ -1,0 +1,9 @@
+[submodule "arduinolibs"]
+	path = arduinolibs
+	url = https://github.com/rweather/arduinolibs
+[submodule "pqm4"]
+	path = pqm4
+	url = https://github.com/mupq/pqm4
+[submodule "cores"]
+	path = cores
+	url = https://github.com/PaulStoffregen/cores
