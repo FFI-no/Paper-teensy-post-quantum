@@ -12,9 +12,11 @@ The work was carried out by two undergraduate students during a summer internshi
 You will need two Teensy 3.6 boards, some cables and optionally LEDs and resistors.
 For simplicity, we refer to the two boards as Alice and Bob.
 
-1. Install [Arduino](https://www.arduino.cc/en/Main/Software) and [Teensyduino](https://www.pjrc.com/teensy/td_download.html).
+1. Either, 
+   * Install the latest version of `arm-none-eabi` *or*
+   * Install [Arduino](https://www.arduino.cc/en/Main/Software) and [Teensyduino](https://www.pjrc.com/teensy/td_download.html)
 2. Clone this repository using `$ git clone --recurse-submodules`. (Run `submodules.sh` if you cloned without the argument.)
-3. Edit `Makefile` to point to your Teensyduino installation. Alternatively, you can use a different installation of `arm-none-eabi` and the Arduino libraries for Teensy 3.6. Warning: This has not been tested by us.
+3. If you opted to use Arduino and Teensyduino, edit `Makefile` to point to your Teensyduino installation.
 4. Run `make initiator`, `make responder`, or simply `make` for both.
 5. Upload `initiator.hex` to Alice and `responder.hex` to Bob using the Teensy Loader. Disconnect both boards, and set up the hardware:
    * Connect the two devices using the serial1 interface at pins 0 (RX1) and 1 (TX1), as well as GND.
