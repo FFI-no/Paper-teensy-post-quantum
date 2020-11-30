@@ -49,3 +49,7 @@ the `LD_SCRIPT` and `FLAGS_CPU` variables. The `BOARD_ID` also needs to be chang
 The makefile is configured to a Linux environment. In particular, the paths in
 `CORE_BASE`, `GCC_BASE` and `UPL_PJRC_B` will depend on your operating system and
 where you downloaded you Arduino files.
+
+## License
+
+This repository is available under the MIT License. See the license file for details.
